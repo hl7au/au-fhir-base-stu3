@@ -1310,6 +1310,13 @@
     </resource>
     <resource>
       <example value="false"/>
+      <name value="AU Base Diagnostic Report"/>
+      <sourceReference>
+        <reference value="StructureDefinition/au-diagnosticreport"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
       <name value="AU Base Diagnostic Observation"/>
       <sourceReference>
         <reference value="StructureDefinition/au-diagnosticobservation"/>
