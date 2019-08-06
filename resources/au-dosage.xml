@@ -60,15 +60,15 @@
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Dosage.asNeeded[x]:asNeededCoding">
+    <element id="Dosage.asNeeded[x]:asNeededCodeableConcept">
       <path value="Dosage.asNeeded[x]" />
-      <sliceName value="asNeededCoding" />
+      <sliceName value="asNeededCodeableConcept" />
       <short value="Coded Reason For Take &quot;as needed&quot;" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Dosage.asNeeded[x]:asNeededCoding.coding">
+    <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.coding">
       <path value="Dosage.asNeeded[x].coding" />
       <slicing>
         <discriminator>
@@ -78,7 +78,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Dosage.asNeeded[x]:asNeededCoding.coding:snomedFinding">
+    <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.coding:snomedFinding">
       <path value="Dosage.asNeeded[x].coding" />
       <sliceName value="snomedFinding" />
       <short value="Clinical Finding (SNOMED CT)" />
