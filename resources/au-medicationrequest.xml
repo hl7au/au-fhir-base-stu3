@@ -229,14 +229,7 @@
           <path value="$this" />
         </discriminator>
         <rules value="closed" />
-      </slicing>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-medication" />
-      </type>
+       </slicing>
     </element>
     <element id="MedicationRequest.medication[x]:medicationCodeableConcept">
       <path value="MedicationRequest.medication[x]" />
