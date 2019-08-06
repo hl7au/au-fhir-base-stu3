@@ -36,7 +36,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
       <short value="Medication Detail" />
       <type>
