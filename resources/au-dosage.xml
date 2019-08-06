@@ -61,7 +61,7 @@
       <max value="1"/>
     </element>
     <element id="Dosage.asNeeded[x]:asNeededCodeableConcept">
-      <path value="Dosage.asNeeded[x]" />
+      <path value="Dosage.asNeededCodeableConcept" />
       <sliceName value="asNeededCodeableConcept" />
       <short value="Coded Reason For Take &quot;as needed&quot;" />
       <type>
