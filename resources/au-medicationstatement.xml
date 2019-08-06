@@ -299,7 +299,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]:asNeededCoding">
