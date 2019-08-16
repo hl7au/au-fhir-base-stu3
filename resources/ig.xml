@@ -591,6 +591,12 @@
 	     <reference value="ValueSet/grounds-for-concurrent-supply"/>
 	   </sourceReference>
     </resource>
+		<resource>
+      <example value="false"/>
+      <sourceReference>
+	     <reference value="StructureDefinition/au-substance"/>
+	   </sourceReference>
+    </resource>
     <resource>
       <example value="true"/>
       <name value="Medication Example Generic Pack"/>
