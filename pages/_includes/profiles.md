@@ -36,10 +36,10 @@ These Profiles have been defined for this implementation guide.
 * [AU Base Diagnostic Report](StructureDefinition-au-diagnosticreport.html) - diagnostic report with localisation concepts
 * [AU Base Diagnostic Observation](StructureDefinition-au-diagnosticobservation.html) - observation for diagnostic reporting
 
-
 ## Clinical Profiles
 * [AU Base Condition](StructureDefinition-au-condition.html) - condition with local coding for clinical condition, body site and clinical finding.
 * [AU Base Allergy Intolerance](StructureDefinition-au-allergyintolerance.html) - allergy intolerance with local coding
+* [AU Base Substance](StructureDefinition-au-substance.html) - substance details with local coding
 
 ## Composition Profiles
 * [AU Base Composition](StructureDefinition-au-composition.html) - composition pattern aligned with local CDA requirements
