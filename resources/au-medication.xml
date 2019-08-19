@@ -244,6 +244,7 @@
       <sliceName value="itemCodeableConcept" />
       <short value="Coded Ingredient Product" />
       <definition value="Coding for a substance or medicinal product  that is an ingredient of the medication." />
+	    <min value="0" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -269,6 +270,20 @@
           <reference value="http://hl7.org.au/fhir/ValueSet/amt-mp-codes" />
         </valueSetReference>
       </binding>
+    </element>    
+    <element id="Medication.ingredient.item[x]:itemReference">
+      <path value="Medication.ingredient.item[x]" />
+      <sliceName value="itemReference" />
+      <short value="Item Reference" />
+      <min value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-medication" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-substance" />
+      </type>
     </element>
     <element id="Medication.ingredient.amount">
       <path value="Medication.ingredient.amount" />
