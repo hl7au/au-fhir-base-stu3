@@ -3,22 +3,22 @@
   "id" : "au-base",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "D:\\Oridashi\\Repositories\\au-fhir-base\\resources"
+    "valueString" : "C:\\Users\\Administrator\\Documents\\GitHub\\au-fhir-base-stu3\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "D:\\Oridashi\\Repositories\\au-fhir-base\\examples"
+    "valueString" : "C:\\Users\\Administrator\\Documents\\GitHub\\au-fhir-base-stu3\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "D:\\Oridashi\\Repositories\\au-fhir-base\\pages"
+    "valueString" : "C:\\Users\\Administrator\\Documents\\GitHub\\au-fhir-base-stu3\\pages"
   }],
   "url" : "http://hl7.org.au/fhir/ImplementationGuide/au-base",
-  "version" : "1.0.2",
+  "version" : "1.0.1",
   "name" : "Implementation Guide Template",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2010-02-15T00:00:00+11:00",
+  "date" : "2019-02-20T00:00:00+11:00",
   "publisher" : "HL7 Australia",
   "contact" : [{
     "name" : "HL7 Australia Patient Administration Working Group",
@@ -1388,16 +1388,12 @@
       "generation" : "html"
     },
     "parameter" : [{
-      "code" : "generate-json",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "xml"
     },
     {
-      "code" : "generate-xml",
-      "value" : "true"
-    },
-    {
-      "code" : "generate-turtle",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "JSON"
     }]
   }
 }
