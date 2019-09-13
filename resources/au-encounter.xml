@@ -97,22 +97,8 @@
     </element>
     <element id="Encounter.hospitalization.dischargeDisposition.coding">
       <path value="Encounter.hospitalization.dischargeDisposition.coding"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="system"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-    </element>
-    <element id="Encounter.hospitalization.dischargeDisposition.coding:separationMode">
-      <path value="Encounter.hospitalization.dischargeDisposition.coding"/>
-      <sliceName value="separationMode"/>
-      <short value="Separation Mode"/>
-      <definition value="Category or kind of location after discharge."/>
-      <max value="1"/>
       <binding>
-        <strength value="required"/>
+        <strength value="preferred"/>
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/separation-mode-1"/>
       </binding>
     </element>
