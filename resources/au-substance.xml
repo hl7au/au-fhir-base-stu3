@@ -27,5 +27,56 @@
       <path value="Substance" />
       <short value="A substance in an Australian healthcare context" />
     </element>
+    <element id="Substance.code">
+      <path value="Substance.code" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SubstanceCode" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="https://healthterminologies.gov.au/fhir/ValueSet/substance-1" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Substance.ingredient">
+     <path value="Substance.ingredient"/>
+    </element>
+    <element id="Substance.ingredient.substance[x]">
+      <path value="Substance.ingredient.substance[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Substance.ingredient.substance[x]:substanceCodeableConcept">
+      <path value="Substance.ingredient.substance[x]" />
+      <sliceName value="substanceCodeableConcept" />
+      <min value="0" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SubstanceIngredient" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="https://healthterminologies.gov.au/fhir/ValueSet/substance-1" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Substance.ingredient.substance[x]:substanceReference">
+      <path value="Substance.ingredient.substance[x]" />
+      <sliceName value="substanceReference" />
+      <min value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-substance" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
