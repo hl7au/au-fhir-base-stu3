@@ -94,10 +94,10 @@
     </element>
     <element id="Encounter.hospitalization.dischargeDisposition">
       <path value="Encounter.hospitalization.dischargeDisposition"/>
-    </element>
-    <element id="Encounter.hospitalization.dischargeDisposition.coding">
-      <path value="Encounter.hospitalization.dischargeDisposition.coding"/>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DischargeDisp"/>
+        </extension>
         <strength value="preferred"/>
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/separation-mode-1"/>
       </binding>
