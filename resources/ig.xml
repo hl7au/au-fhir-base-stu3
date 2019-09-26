@@ -366,6 +366,18 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="StructureDefinition/au-specimen"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/au-immunizationrecommendation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/au-medicationadministration"/>
       </sourceReference>
     </resource>
