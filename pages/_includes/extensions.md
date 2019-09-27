@@ -31,7 +31,6 @@ Related to administration records such as patient, practitioner, practitioner ro
 * [Minimum Interval Between Repeats](StructureDefinition-minimum-interval-between-repeats.html) - minimum allowed dispensing interval
 * [PBS Sponsor Organisation](StructureDefinition-pbs-sponsor.html) - sponsor organisation that is responsible for the supply of the medicine
 * [Administration Witness](StructureDefinition-medication-administration-witness.html) - witness to administration of a medication
-* [Strength Text](StructureDefinition-medication-strength-text.html) - text representation of medication strength
 * [Change Description](StructureDefinition-change-description.html) - description of the change including reason for change
 
 ## Clinical
