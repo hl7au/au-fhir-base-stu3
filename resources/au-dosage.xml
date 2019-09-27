@@ -43,7 +43,7 @@
           <valueString value="MedicationAsNeededReason"/>
         </extension>
         <strength value="preferred"/>
-        <valueSetUri value="https://api.healthterminologies.gov.au/integration/v2/fhir/ValueSet/clinical-finding-1" />
+        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1" />
       </binding>
     </element>
     <element id="Dosage.site">
