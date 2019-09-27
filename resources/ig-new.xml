@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="au-base"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base\resources"/>
+    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base-stu3\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base\examples"/>
+    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base-stu3\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base\pages"/>
+    <valueString value="C:\Users\Administrator\Documents\GitHub\au-fhir-base-stu3\pages"/>
   </extension>
   <url value="http://hl7.org.au/fhir/ImplementationGuide/au-base"/>
   <version value="1.1.0"/>
   <name value="Implementation Guide Template"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2019-05-06T00:00:00+10:00"/>
+  <date value="2019-08-06T00:00:00+10:00"/>
   <publisher value="HL7 Australia"/>
   <contact>
     <name value="HL7 Australia Patient Administration Working Group"/>
@@ -129,6 +129,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/medication-administration-witness"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/medication-type"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -206,6 +213,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/author-role"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/healthcareservice-eligibility-detail"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -241,14 +255,14 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/medication-batch-serialnumber"/>
+        <reference value="StructureDefinition/author-related-person"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/recorder-related-person"/>
+        <reference value="StructureDefinition/au-norelevantfinding"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -416,6 +430,55 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-specimen"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-immunizationrecommendation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-medicationadministration"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/encounter-description"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/encounter-origin-organisation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/encounter-destination-organisation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/associated-practitionerrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/snomed-healthcareservice-services"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -423,7 +486,35 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/category-additional"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/performer-party"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/au-hl7v2-0203"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/snomed-healthcareservice-roles"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/au-hl7v2-0443"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -584,7 +675,42 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/au-hl7v2-0443"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/change-description"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/list-source-role"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-medlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/grounds-for-concurrent-supply"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-substance"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -1277,11 +1403,122 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/encounter-example0"/>
+      </reference>
+      <name value="Encounter with description"/>
+      <description value="Encounter with encounter description"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/encounter-example1"/>
+      </reference>
+      <name value="Encounter with narative description"/>
+      <description value="Encounter with narrative description"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/recorder"/>
+      </reference>
+      <name value="Recorder"/>
+      <description value="Reference to an individual who recorded the record and takes responsibility for its content."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="List/e0a6c4a6-4e97-11e9-8647-d663bd873d93"/>
+      </reference>
+      <name value="Medicine List example with referenced entries"/>
+      <description value="Medicine List example with referenced entries"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="List/bdaf4fda-4e98-11e9-8647-d663bd873d93"/>
+      </reference>
+      <name value="Medicine List example - no known current medicine"/>
+      <description value="Medicine List example - no known current medicine"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/9309d080-4e97-11e9-8647-d663bd873d93"/>
+      </reference>
+      <name value="Medicine List in a bundle"/>
+      <description value="Medicine List in a bundle"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="List/0ebc46a8-4ea8-11e9-8647-d663bd873d93"/>
+      </reference>
+      <name value="Medicine List with changes"/>
+      <description value="Medicine List with changes"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/f12d073e-4e99-11e9-8647-d663bd873d93"/>
       </reference>
       <name value="Patient"/>
       <description value="Patient"/>
       <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/example0"/>
+      </reference>
+      <name value="Condition"/>
+      <description value="Condition"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/associated-healthcareservice"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-encounter"/>
+      </reference>
+      <name value="AU Base Encounter"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-diagnosticprocedurerequest"/>
+      </reference>
+      <name value="AU Base Diagnostic Procedure Request"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-diagnosticreport"/>
+      </reference>
+      <name value="AU Base Diagnostic Report"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-diagnosticobservation"/>
+      </reference>
+      <name value="AU Base Diagnostic Observation"/>
+      <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
     <page>
