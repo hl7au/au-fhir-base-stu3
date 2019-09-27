@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-medicationdispense" />
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-medicationdispense" />
-  <version value="1.0.1" />
+  <version value="1.1.0" />
   <name value="AUBaseMedicationDispense" />
   <title value="AU Base Medication Dispense" />
   <status value="draft" />
@@ -168,6 +168,7 @@
       <path value="MedicationDispense.medication[x]" />
       <sliceName value="medicationCodeableConcept" />
       <short value="Coded Dispensed Medication" />
+      <min value="0" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -280,6 +281,7 @@
       <path value="MedicationDispense.medication[x]" />
       <sliceName value="medicationReference" />
       <short value="Dispensed Medication" />
+      <min value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-medication" />

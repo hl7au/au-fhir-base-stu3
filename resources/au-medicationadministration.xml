@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-medicationadministration" />
-  <version value="0.9.0" />
+  <version value="1.1.0" />
   <name value="AUBaseMedicationAdministration" />
   <title value="AUBaseMedicationAdministration" />
   <status value="draft" />
@@ -36,17 +36,11 @@
         <rules value="closed" />
       </slicing>
       <short value="Medication Detail" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-medication" />
-      </type>
     </element>
     <element id="MedicationAdministration.medication[x]:medicationCodeableConcept">
       <path value="MedicationAdministration.medication[x]" />
       <sliceName value="medicationCodeableConcept" />
+       <min value="0" />
       <short value="Coded Medication" />
       <type>
         <code value="CodeableConcept" />
@@ -153,6 +147,7 @@
       <path value="MedicationAdministration.medication[x]" />
       <sliceName value="medicationReference" />
       <short value="Medication Reference" />
+      <min value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-medication" />
