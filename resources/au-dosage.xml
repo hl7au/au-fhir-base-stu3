@@ -66,25 +66,12 @@
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1"/>
       </binding>
     </element>
-    <element id="Dosage.method.coding">
-      <path value="Dosage.method.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Dosage.method.coding:snomedMethod">
-      <path value="Dosage.method.coding" />
-      <sliceName value="snomedMethod" />
-      <short value="SNOMED CT Administration Method" />
-      <max value="1" />
+    <element id="Dosage.method">
+      <path value="Dosage.method" />
       <binding>
-        <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
-      </binding>
+          <strength value="preferred" />
+          <valueSetUri value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
+        </binding>
     </element>
   </differential>
 </StructureDefinition>
