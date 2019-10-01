@@ -36,11 +36,12 @@
     </element>
     <element id="Extension.valueReference">
       <path value="Extension.valueReference" />
+      <sliceName value="valueReference" />
       <short value="Who authored the record" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
     </element>
   </differential>
