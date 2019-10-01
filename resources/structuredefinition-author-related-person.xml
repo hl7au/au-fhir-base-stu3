@@ -16,7 +16,7 @@
   </contact>
   <description value="This pre-adopts (from R4) an author who is a related person." />
   <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
+  <kind value="primitive-type" />
   <abstract value="false" />
   <contextType value="resource" />
   <context value="Resource" />
@@ -31,17 +31,17 @@
       <max value="1" />
     </element>
     <element id="Extension.url">
-      <path value="Extension.url"/>
+      <path value="Extension.url" />
       <fixedUri value="http://hl7.org.au/fhir/StructureDefinition/author-related-person" />
     </element>
-    <element id="Extension.valueReference">
+    <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
       <short value="Who authored the record" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>
   </differential>
