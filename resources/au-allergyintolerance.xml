@@ -43,12 +43,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="AllergyIntolerance.extension:recorderRelatedPerson">
+    <element id="AllergyIntolerance.extension:authorRelatedPerson">
       <path value="AllergyIntolerance.extension" />
-      <sliceName value="recorderRelatedPerson" />
-      <short value="Related person that recorded the sensitivity" />
-      <definition value="Reference to related person that recorded the record and takes responsibility for its content." />
-      <max value="1" />
+      <sliceName value="authorRelatedPerson" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/author-related-person" />
@@ -57,9 +54,6 @@
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="AllergyIntoleranceCode" />
-        </extension>
         <strength value="preferred" />
         <description value="Preferred SNOMED-CT coding for type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies." />
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1" />
@@ -72,9 +66,6 @@
     <element id="AllergyIntolerance.reaction.substance">
       <path value="AllergyIntolerance.reaction.substance" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SubstanceCode" />
-        </extension>
         <strength value="preferred" />
         <description value="Preferred SNOMED-CT coding defining the type of the substance (including pharmaceutical products)." />
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1" />
@@ -83,9 +74,6 @@
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Manifestation" />
-        </extension>
         <strength value="preferred" />
         <description value="Preferred SNOMED-CT coding of clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event." />
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1" />

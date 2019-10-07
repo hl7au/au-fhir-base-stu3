@@ -16,9 +16,9 @@
   </contact>
   <description value="This pre-adopts (from R4) an author who is a related person." />
   <fhirVersion value="3.0.1" />
-  <kind value="primitive-type" />
+  <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
+  <contextType value="datatype" />
   <context value="Resource" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -37,7 +37,7 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="Who authored the record" />
+      <short value="Author of the record" />
       <min value="1" />
       <type>
         <code value="Reference" />
