@@ -31,10 +31,6 @@
       <definition value="Reference to related person that authored the resource and takes responsibility for its content." />
       <max value="1" />
     </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org.au/fhir/StructureDefinition/author-related-person" />
-    </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
