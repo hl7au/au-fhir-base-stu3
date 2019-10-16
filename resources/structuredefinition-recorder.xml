@@ -38,7 +38,7 @@
       <fixedUri value="http://hl7.org.au/fhir/StructureDefinition/recorder" />
     </element>
     <element id="Extension.valueReference:valueReference">
-      <path value="Extension.valueReference" />
+       <path value="Extension.value[x]" />
       <sliceName value="valueReference" />
       <short value="Who recorded the record" />
       <min value="1" />
