@@ -14,11 +14,11 @@
     "valueString" : "C:\\Users\\Administrator\\Documents\\GitHub\\au-fhir-base-stu3\\pages"
   }],
   "url" : "http://hl7.org.au/fhir/ImplementationGuide/au-base",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "Implementation Guide Template",
   "status" : "active",
   "experimental" : true,
-  "date" : "2019-10-16T00:00:00+11:00",
+  "date" : "2020-01-22T00:00:00+11:00",
   "publisher" : "HL7 Australia",
   "contact" : [{
     "name" : "HL7 Australia Patient Administration Working Group",
@@ -60,7 +60,7 @@
   }],
   "packageId" : "hl7.fhir.au.base",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.0.1",
+  "fhirVersion" : ["3.0.2",
   "3.0.2"],
   "definition" : {
     "grouping" : [{

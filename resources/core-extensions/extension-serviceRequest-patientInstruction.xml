@@ -5,7 +5,7 @@
   <name value="patientInstruction" />
   <status value="draft" />
   <description value="Instructions in terms that are understood by the patient or consumer." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />

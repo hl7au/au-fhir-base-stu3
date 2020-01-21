@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <description value="FHIR Body Height Profile"/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.2"/>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>

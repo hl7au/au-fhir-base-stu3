@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="attester-related-party" />
   <url value="http://hl7.org.au/fhir/StructureDefinition/attester-related-party" />
-  <version value="1.1.0"/>
+  <version value="1.1.1"/>
   <name value="AttesterRelatedParty" />
   <title value="Attester as a RelatedPerson" />
   <status value="draft" />
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="This extension applies to the Composition resource and provides an extension for an attester who is a related person." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />

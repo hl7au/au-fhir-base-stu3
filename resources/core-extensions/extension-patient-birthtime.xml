@@ -15,7 +15,7 @@
   <date value="2017-04-19T07:44:43+10:00"/>
   <publisher value="HL7"/>
   <description value="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively."/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.2"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

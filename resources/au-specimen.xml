@@ -23,7 +23,7 @@
     </telecom>
   </contact>
   <description value="This profile defines a specimen details structure that includes core localisation concepts for use in an Australian context."/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.2"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Specimen"/>
